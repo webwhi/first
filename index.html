@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天知道</title>
+    <link href="天知道.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="app">
+     <footer>
+         <img src="天知道.png">
+     </footer>
+     <nav >
+         <input type="search" @keyup.enter="searchWether" v-model="city" >
+         <button @click="searchWether" v-model="city">搜索</button>
+         <div class="honycity">
+             <a href="javascript:;" @click="changeWether('北京')">北京</a>
+             <a href="javascript:;" @click="changeWether('上海')">上海</a>
+             <a href="javascript:;" @click="changeWether('深圳')">深圳</a>
+             <a href="javascript:;" @click="changeWether('广州')">广州</a>
+         </div>
+     </nav>
+     <section>
+          <ul>
+              <li v-for="item in wetherList">
+                  <div class="incont">{{item.type}}</div>
+                  <div class="temp">
+                      <b>{{item.low}}</b>
+                      ~
+                      <b>{{item.high}}</b>
+                  </div>
+                  <div class="data">{{item.date}}</div>
+              </li>
+          </ul>
+     </section>
+     <ul class="city">                                    
+     <li v-for="item in num">{{item}}</li>
+     </ul>
+     </div>
+     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <script src="http://wthrcdn.etouch.cn/weather_mini"></script>
+     <script src="天知道.js"></script>
+</body>
+</html>

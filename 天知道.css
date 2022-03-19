@@ -1,0 +1,59 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    border: 0ch;
+}
+li{
+    list-style: none;
+}
+footer{
+    margin-top: 100px;
+    margin-left: 800px;  
+}
+nav {
+    margin-top: 100px;
+    margin-left: 500px;  
+}
+nav input{
+    width: 800px;
+    height: 40px;
+    border: rgb(174, 208, 216) solid 3px;
+}
+nav button{
+   float: right;
+   height: 40px;
+   width: 100px;
+   margin-right: 520px;
+   background-color: rgb(59, 154, 205);
+   color:#fff;
+}
+section{
+    margin-left: 500px;
+    margin-top: 200px;
+}
+section ul li{
+    float: left;
+    border-right: rgb(192, 192, 192) solid 1px;
+}
+.incont{
+    color: rgb(253, 189, 154);
+    font-size: 50px;
+}
+.temp{
+    padding-right: 30px;
+    color: rgb(234, 179, 132);
+    margin-top: 20px;
+}
+.data{
+    color: rgb(165, 165, 165);
+    margin-top: 30px;
+}
+.city{
+    color: aqua;
+    font-size: 50px;
+}
+.honycity a{
+    text-decoration: none;
+    color:rgb(129, 130, 123);
+}
